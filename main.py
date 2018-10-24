@@ -30,8 +30,8 @@ Builder.load_string("""
             on_press:
                 root.manager.transition.duration = 1.4
                 root.manager.current = 'root'
-            background_normal: '\Image\speedynormal.png'
-            background_down: '\Image\speedydown.png'
+            background_normal: 'Image/speedynormal.png'
+            background_down: 'Image/speedydown.png'
 
 # <MenuScreen>:
 #     BoxLayout:
@@ -60,8 +60,8 @@ Builder.load_string("""
         orientation: 'vertical'
         # Button:
         #     # text: 'Back to menu'
-        #     background_normal: 'arrow.png'
-        #     background_down: 'arrow.png'
+        #     background_normal: 'Image/arrow.png'
+        #     background_down: 'Image/arrow.png'
         #     size_hint: .13, .10
         #     pos: 35, 500
         #     on_press: 
@@ -70,13 +70,13 @@ Builder.load_string("""
         Button:
             # color: 0,1,0,1
             # text: 'Play'
-            background_normal: 'play1.png'
-            background_down: 'play2.png'
+            background_normal: 'Image/play1.png'
+            background_down: 'Image/play2.png'
             size_hint: .15, .066
             pos: 390, 107
             on_release: root.upd_ltxt()
         Image:
-            source: 'line.png'
+            source: 'Image/line.png'
             pos: 35, 35
         Label:
             id: texts
@@ -95,22 +95,22 @@ Builder.load_string("""
             pos: 240, -65
         Button:
             # text: '+'
-            background_normal: 'plus.png'
-            background_down: 'downplus.png'          
+            background_normal: 'Image/plus.png'
+            background_down: 'Image/downplus.png'          
             size_hint: .105, .15
             pos: 720, 43
             on_release: root.upd_count_plus()
         Button:
             # text: '-'
-            background_normal: 'minus.png'
-            background_down: 'downminus.png'
+            background_normal: 'Image/minus.png'
+            background_down: 'Image/downminus.png'
             size_hint: .105, .15
             pos: 80, 43 
             on_release: root.upd_count_minus()
         Button:
             # text: 'Stop/Start'
-            background_normal: 'stop1.png'
-            background_down: 'stop2.png'
+            background_normal: 'Image/stop1.png'
+            background_down: 'Image/stop2.png'
             size_hint: .22, .095
             pos: 358, 36
             on_press: root.stop()
