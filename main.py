@@ -84,8 +84,8 @@ Builder.load_string("""
             text: 'Loo[color=ff3333]k[/color] Here!'
             halign: 'center'
             markup: True
-            font_size: 35
-            pos: -36, 35
+            font_size: 30
+            pos: -40, 35
         Label:
             id: speed
             color: 0,0,0,1
